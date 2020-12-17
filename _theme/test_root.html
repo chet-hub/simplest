@@ -1,0 +1,38 @@
+---
+repo:
+- name: _theme/components/test_1.html
+- name: _theme/components/test_1.html
+- name: _theme/components/test_1.html
+---
+---
+a: a
+b: b
+c: <b>GitHub</b>
+---
+
+{{#data}}
+    {{title}}-----{{fileName}}
+{{/data}}
+
+<%#data%>
+    <%content%>
+<%/data%>
+
+<!--First render-->
+
+{{#repo}}
+<include src='{{name}}' />
+{{/repo}}
+
+
+
+<!--Second render-->
+
+
+{{ company }}
+{{{ company }}}
+{{ name }}
+{{{ name }}}
+<% a %>
+<%{ c }%>
+

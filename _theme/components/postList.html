@@ -1,0 +1,24 @@
+---
+interception:  ['addLink']
+---
+<include src="_theme/components/post.css.html" />
+
+
+<div id="target">
+    {{#data}}
+    <div class="post widthController">
+        <p class="title">
+            {{title}}
+        </p>
+        <p class="description">
+            {{author}} / {{date}}
+        </p>
+        <img src="{{image}}" alt="" srcset="">
+        <p class='summary'>
+            {{summary}}
+        </p>
+        <a href="{{link}}" class="button">Read More</a>
+    </div>
+    {{/data}}
+</div>
+
